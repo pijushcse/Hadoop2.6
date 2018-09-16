@@ -1,0 +1,50 @@
+2016-06-01 23:34:00,014 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = pilab/127.0.1.1
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.2.1
+STARTUP_MSG:   build = https://svn.apache.org/repos/asf/hadoop/common/branches/branch-1.2 -r 1503152; compiled by 'mattf' on Mon Jul 22 15:23:09 PDT 2013
+STARTUP_MSG:   java = 1.8.0_91
+************************************************************/
+2016-06-01 23:34:01,719 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2016-06-01 23:34:02,274 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2016-06-01 23:34:02,276 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2016-06-01 23:34:02,276 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: TaskTracker metrics system started
+2016-06-01 23:34:04,228 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2016-06-01 23:34:04,406 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2016-06-01 23:34:04,410 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2016-06-01 23:34:05,130 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2016-06-01 23:34:05,437 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2016-06-01 23:34:05,549 INFO org.apache.hadoop.mapred.TaskLogsTruncater: Initializing logs' truncater with mapRetainSize=-1 and reduceRetainSize=-1
+2016-06-01 23:34:05,669 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as hduser
+2016-06-01 23:34:05,691 INFO org.apache.hadoop.mapred.TaskTracker: Good mapred local directories are: /app/hadoop/tmp/mapred/local
+2016-06-01 23:34:05,762 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2016-06-01 23:34:05,763 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source TaskTrackerMetrics registered.
+2016-06-01 23:34:05,887 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort46468 registered.
+2016-06-01 23:34:05,897 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2016-06-01 23:34:05,903 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort46468 registered.
+2016-06-01 23:34:05,937 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:46468
+2016-06-01 23:34:05,948 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_pilab:localhost/127.0.0.1:46468
+2016-06-01 23:34:05,927 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2016-06-01 23:34:05,930 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 46468: starting
+2016-06-01 23:34:05,930 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 46468: starting
+2016-06-01 23:34:05,930 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 46468: starting
+2016-06-01 23:34:05,937 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 46468: starting
+2016-06-01 23:34:05,968 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 46468: starting
+2016-06-01 23:34:07,150 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-01 23:34:08,152 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-01 23:34:09,154 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-01 23:34:10,155 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-01 23:34:15,589 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_pilab:localhost/127.0.0.1:46468
+2016-06-01 23:34:15,706 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2016-06-01 23:34:15,742 INFO org.apache.hadoop.mapred.TaskTracker:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@635eaaf1
+2016-06-01 23:34:15,766 WARN org.apache.hadoop.mapred.TaskTracker: TaskTracker's totalMemoryAllottedForTasks is -1. TaskMemoryManager is disabled.
+2016-06-01 23:34:15,790 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2016-06-01 23:34:15,847 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ShuffleServerMetrics registered.
+2016-06-01 23:34:15,857 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2016-06-01 23:34:15,858 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2016-06-01 23:34:15,859 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2016-06-01 23:34:15,859 INFO org.mortbay.log: jetty-6.1.26
+2016-06-01 23:34:18,377 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2016-06-01 23:34:18,379 INFO org.apache.hadoop.mapred.TaskTracker: FILE_CACHE_SIZE for mapOutputServlet set to : 2000

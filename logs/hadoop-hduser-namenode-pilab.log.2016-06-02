@@ -1,0 +1,18 @@
+2016-06-02 00:12:34,264 INFO org.apache.hadoop.hdfs.StateChange: *BLOCK* processReport: from 127.0.0.1:50010, blocks: 1, processing time: 0 msecs
+2016-06-02 00:26:51,793 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 4 Total time for transactions(ms): 12 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 48 
+2016-06-02 00:28:21,015 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 6 Total time for transactions(ms): 12 Number of transactions batched in Syncs: 0 Number of syncs: 4 SyncTimes(ms): 53 
+2016-06-02 00:28:21,078 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /input_data/readme.txt. blk_-263779466134916988_1002
+2016-06-02 00:28:21,362 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-263779466134916988_1002 size 4567
+2016-06-02 00:28:21,395 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /input_data/readme.txt from client DFSClient_NONMAPREDUCE_736813464_16
+2016-06-02 00:28:21,398 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /input_data/readme.txt is closed by DFSClient_NONMAPREDUCE_736813464_16
+2016-06-02 00:30:17,497 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 10 Total time for transactions(ms): 13 Number of transactions batched in Syncs: 0 Number of syncs: 6 SyncTimes(ms): 68 
+2016-06-02 00:30:19,306 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* allocateBlock: /output/_temporary/_attempt_local1030791592_0001_r_000000_0/part-r-00000. blk_-8399072483471288070_1003
+2016-06-02 00:30:19,680 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-8399072483471288070_1003 size 2932
+2016-06-02 00:30:19,700 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /output/_temporary/_attempt_local1030791592_0001_r_000000_0/part-r-00000 from client DFSClient_NONMAPREDUCE_-1249026044_1
+2016-06-02 00:30:19,701 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /output/_temporary/_attempt_local1030791592_0001_r_000000_0/part-r-00000 is closed by DFSClient_NONMAPREDUCE_-1249026044_1
+2016-06-02 00:30:19,837 INFO org.apache.hadoop.hdfs.StateChange: Removing lease on  /output/_SUCCESS from client DFSClient_NONMAPREDUCE_-1249026044_1
+2016-06-02 00:30:19,838 INFO org.apache.hadoop.hdfs.StateChange: DIR* completeFile: /output/_SUCCESS is closed by DFSClient_NONMAPREDUCE_-1249026044_1
+2016-06-02 00:34:42,630 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at pilab/127.0.1.1
+************************************************************/

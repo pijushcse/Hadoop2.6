@@ -1,0 +1,4 @@
+2016-06-02 00:34:54,252 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at pilab/127.0.1.1
+************************************************************/

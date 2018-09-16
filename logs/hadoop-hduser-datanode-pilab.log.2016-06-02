@@ -1,0 +1,28 @@
+2016-06-02 00:12:34,259 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Finished asynchronous block report scan in 1ms
+2016-06-02 00:12:34,268 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 1 blocks took 0 msec to generate and 4 msecs for RPC and NN processing
+2016-06-02 00:28:21,328 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving blk_-263779466134916988_1002 src: /127.0.0.1:41248 dest: /127.0.0.1:50010
+2016-06-02 00:28:21,361 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:41248, dest: /127.0.0.1:50010, bytes: 4567, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_736813464_16, offset: 0, srvID: DS-9088633-127.0.1.1-50010-1464838455112, blockid: blk_-263779466134916988_1002, duration: 24904346
+2016-06-02 00:28:21,365 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for blk_-263779466134916988_1002 terminating
+2016-06-02 00:30:18,620 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:50010, dest: /127.0.0.1:41260, bytes: 4603, op: HDFS_READ, cliID: DFSClient_NONMAPREDUCE_-1249026044_1, offset: 0, srvID: DS-9088633-127.0.1.1-50010-1464838455112, blockid: blk_-263779466134916988_1002, duration: 7086497
+2016-06-02 00:30:19,654 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Receiving blk_-8399072483471288070_1003 src: /127.0.0.1:41262 dest: /127.0.0.1:50010
+2016-06-02 00:30:19,686 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:41262, dest: /127.0.0.1:50010, bytes: 2932, op: HDFS_WRITE, cliID: DFSClient_NONMAPREDUCE_-1249026044_1, offset: 0, srvID: DS-9088633-127.0.1.1-50010-1464838455112, blockid: blk_-8399072483471288070_1003, duration: 18493300
+2016-06-02 00:30:19,689 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: PacketResponder 0 for blk_-8399072483471288070_1003 terminating
+2016-06-02 00:30:55,523 INFO org.apache.hadoop.hdfs.server.datanode.DataNode.clienttrace: src: /127.0.0.1:50010, dest: /127.0.0.1:41266, bytes: 2956, op: HDFS_READ, cliID: DFSClient_NONMAPREDUCE_736813464_16, offset: 0, srvID: DS-9088633-127.0.1.1-50010-1464838455112, blockid: blk_-8399072483471288070_1003, duration: 905323
+2016-06-02 00:34:43,852 WARN org.apache.hadoop.hdfs.server.datanode.DataNode: java.io.IOException: Call to localhost/127.0.0.1:54310 failed on local exception: java.io.EOFException
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1150)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at com.sun.proxy.$Proxy5.sendHeartbeat(Unknown Source)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.offerService(DataNode.java:1031)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode.run(DataNode.java:1588)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:845)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:790)
+
+2016-06-02 00:34:47,849 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54310. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-02 00:34:48,414 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down DataNode at pilab/127.0.1.1
+************************************************************/

@@ -1,0 +1,37 @@
+2016-06-02 00:34:31,969 ERROR org.apache.hadoop.mapred.TaskTracker: Caught exception: java.io.IOException: Call to localhost/127.0.0.1:54311 failed on local exception: java.io.IOException: Connection reset by peer
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1150)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1118)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:229)
+	at org.apache.hadoop.mapred.$Proxy4.heartbeat(Unknown Source)
+	at org.apache.hadoop.mapred.TaskTracker.transmitHeartBeat(TaskTracker.java:2030)
+	at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:1824)
+	at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:2676)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3939)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:55)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:155)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:128)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:364)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:845)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:790)
+
+2016-06-02 00:34:31,983 INFO org.apache.hadoop.mapred.TaskTracker: Resending 'status' to 'localhost' with reponseId '11857
+2016-06-02 00:34:32,996 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-02 00:34:34,001 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-02 00:34:35,003 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-02 00:34:36,006 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-02 00:34:37,008 INFO org.apache.hadoop.ipc.Client: Retrying connect to server: localhost/127.0.0.1:54311. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2016-06-02 00:34:37,493 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at pilab/127.0.1.1
+************************************************************/
